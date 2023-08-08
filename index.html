@@ -15,38 +15,84 @@
   </head>
   <body>
 
-    <div data-aos="fade-in" data-aos-duration="1000"
-      class="jumbotron jumbotron-fluid text-center ">
-      <h3 data-aos="fade-in" data-aos-duration="2000"
-        class="display-5 quote">We began as wanderers, and we are
+    <div data-aos="fade-in" data-aos-duration="1000" data-aos-once='true'
+      class="jumbotron jumbotron-fluid text-center">
+      <h4 data-aos="fade-in" data-aos-duration="2000" data-aos-once='true'
+        class="display-5" id="quote">We began as wanderers, and we are
         wanderers still. We have lingered long enough on the shores of the
         cosmic ocean. We are ready at last to set sail for the stars.
         <span class="lead">- Carl Sagan</span>
-      </h3>
+      </h4>
     </div>
 
     <div class="section">
       <div class="container d-flex align-items-center">
-        <img class="rounded-circle" id="profile-img" src="static/imgs/portfolio.png" style="margin-left: -15px;">
+        <img class="rounded-circle" id="profile-img" src="static/imgs/profile.png">
         <div>
           <h1 class="ml-3">Khaled Shehada</h1>
-          <div><h3 class="ml-3 typewriter">Software Engineer | AI Researcher</p></div>
+          <div><h4 class="ml-3 mb-3">Software Engineer | AI Researcher</h4></div>
           <p class="ml-3"><i class="fas fa-phone-alt"></i> (857)-225-3060</p>
-          <p class="ml-3"><i class="fas fa-envelope"></i> <a href = "mailto:shehadak@mit.edu">shehadak@mit.edu</a></p>
+          <p class="ml-3"><i class="fas fa-envelope"></i> <a id="email-link" href="mailto:shehadak@mit.edu">shehadak@mit.edu</a></p>
         </div>
       </div>
     </div>
      
 
     <div class="section">
-      <div class="container" style="text-align: center;">
-        <h1>Coming soon!</h1>
+      <div class="container">
+        <h1>Featured Projects</h1>
+    
+        <div data-aos="fade-in" data-aos-duration="1000" data-aos-once='true'
+        class="my-4 project-description">
+          <img class="img-fluid project-img" src="static/imgs/cog-battery.png" alt="Cognitive Battery Benchmark">
+          <h3>Scene Perception for Simulated Intuitive Physics via Bayesian Inverse Graphics</h3>
+          <p>
+            Humans have a wide range of cognitive capacities that make us adept at understanding our surroundings, making inferences even with minimal visual cues. Emulating this understanding in AI systems has various applications, from autonomous driving to virtual reality. Despite the proficiency demonstrated by deep neural networks, recent works have uncovered challenges in their abilities to encode prior physical knowledge, form visual concepts, and perform compositional reasoning. Inspired by this, we develop the Simulated Cognitive Tasks benchmark, a synthetic dataset and data generation tool, based on cognitive tests targeting intuitive physics understanding in primates. We evaluate recent deep learning models on this benchmark and identify challenges in understanding object permanence, quantities, and compositionality. Therefore, we propose a probabilistic generative model that leverages Bayesian inverse graphics to learn structured scene representations that facilitate learning new objects and tracking objects in dynamic scenes. Our evaluation suggests that structured representations and symbolic inference can cooperate with deep learning methods to interpret complex 3D scenes accurately. Overall, we contribute a new method for improving scene understanding in AI models and provide a benchmark for assessing the visual cognitive capacities of computational models.             
+          </p>
+          <p>
+            Check out <a class="link-info" href="https://github.com/d-val/cognitive_battery_benchmark/">the project GitHub repository</a>.
+          </p>
+        </div>
+    
+        <div data-aos="fade-in" data-aos-duration="1000" data-aos-once='true'
+        class="my-4 project-description">
+          <img class="img-fluid project-img" src="static/imgs/syvic.png" alt="SyViC">
+          <h3 class="display-5">Going Beyond Nouns With Vision & Language Models Using Synthetic Data</h3>
+          <p>
+            Large-scale pre-trained Vision & Language (VL) models have shown remarkable performance in many applications, enabling replacing a fixed set of supported classes with zero-shot open vocabulary reasoning over (almost arbitrary) natural language prompts. However, recent works have uncovered a fundamental weakness of these models. For example, their difficulty to understand Visual Language Concepts (VLC) that go 'beyond nouns' such as the meaning of non-object words (e.g., attributes, actions, relations, states, etc.), or difficulty in performing compositional reasoning such as understanding the significance of the order of the words in a sentence. In this work, we investigate to which extent purely synthetic data could be leveraged to teach these models to overcome such shortcomings without compromising their zero-shot capabilities. We contribute Synthetic Visual Concepts (SyViC) - a million-scale synthetic dataset and data generation codebase allowing to generate additional suitable data to improve VLC understanding and compositional reasoning of VL models. Additionally, we propose a general VL finetuning strategy for effectively leveraging SyViC towards achieving these improvements. Our extensive experiments and ablations on VL-Checklist, Winoground, and ARO benchmarks demonstrate that it is possible to adapt strong pre-trained VL models with synthetic data significantly enhancing their VLC understanding (e.g. by 9.9% on ARO and 4.3% on VL-Checklist) with under 1% drop in their zero-shot accuracy.
+          </p>
+          <p>
+            Check out <a class="link-info" href="https://synthetic-vic.github.io/">the project page</a> and <a class="link-info" href="https://arxiv.org/pdf/2303.17590.pdf">paper</a>.
+          </p>
+        </div>
+    
+        <h1>Project Collaborations</h1>
+        <div data-aos="fade-in" data-aos-duration="1000" data-aos-once='true'
+        class="my-4 project-description">
+          <img class="img-fluid project-img" style="width: 566px;" src="static/imgs/brainscore.png" alt="Brain-Score">
+          <h3>Brain-Score for Computational Language Benchmarking</h3>
+          <p>Brain-Score hypothesizes that the more similar the activations of neural networks are to human brain recordings, and the closer their behavior is to that of humans, the better they will perform. The platform facilitates this evaluation by providing a system infrastructure to implement models as artificial subjects and score them on a series of benchmarks. Accordingly, Brain-Score translates experimental data into benchmarks against which any model can be evaluated, and it allows for additional benchmark integration through a plugin management system.
+          </p>
+          <p>
+            Check out <a class="link-info" href="https://www.brain-score.org/">the project website</a> and <a class="link-info" href="https://github.com/brain-score/language">GitHub repository</a>.
+          </p>
+        </div>
+
+        <div data-aos="fade-in" data-aos-duration="1000" data-aos-once='true'
+        class="my-4 project-description">
+        <img class="img-fluid project-img" src="static/imgs/icp.png" alt="iCatcher+">
+        <h3>iCatcher+: Automated Gaze Annotation for Infants and Children</h3>
+          <p>While machine learning has enhanced large-scale psychological research, analyzing infant and child looking behavior remains a manual task. iCatcher+ is a system for automated gaze annotation trained on varied datasets of children from 4 months to 3.5 years. It uses a series of machine learning models to identify the face of the child and estimate their looking direction, all fine-tuned to handle uncertainties in infant behavior. iCatcher+ achieves near human-like precision in identifying gaze patterns across different situations and demographics. This progress hints at potential full automation of online behavioral studies in children, facilitating developmental research on infants.
+          </p>
+          <p>
+            Check out <a class="link-info" href="https://github.com/icatcherplus/icatcher_plus">the project GitHub repository</a>.
+          </p>
+        </div>
+    
       </div>
     </div>
 
     <footer class="footer mt-auto py-3">
-      <!-- <i class="fa fa-copyright" aria-hidden="true"></i> -->
-      <!-- <i class="far fa-copyright" style="color: #000000;"></i> -->
     </footer>
 
     <!-- Optional JavaScript -->
